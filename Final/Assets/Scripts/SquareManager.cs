@@ -11,6 +11,9 @@ public class SquareManager : MonoBehaviour
     private Vector2 maxSpawnPos;
     private Vector2 minSpawnPos;
 
+    [SerializeField] private Vector2 minSquareScale;
+    [SerializeField] private Vector2 maxSquareScale;
+
     private void Start()
     {
         spawnCollider = GetComponent<Collider2D>();
@@ -25,6 +28,7 @@ public class SquareManager : MonoBehaviour
         for(int i = 0; i < squareSpawn; i++)
         {
             GameObject newSquare = Instantiate(square, square.transform.position, Quaternion.identity);
+            newSquare.transform.localScale = new Vector3(Random.Range(minSquareScale.x, maxSquareScale.x), Random.Range(minSquareScale.y, maxSquareScale.y), 1f);
             newSquare.transform.position = GetRandomSpawnPos();
         }
     }
