@@ -83,7 +83,11 @@ TextureImporter:
       - {x: 2, y: 2}
       - {x: 2, y: -2}
     bones: []
+<<<<<<< HEAD
     spriteID: 5680502c78a3945adb5718735ff13f26
+=======
+    spriteID: d76cf2360121e44af9b4c0a7e5abfd23
+>>>>>>> 5aa1b5cbd3d36c72c3145919f79aaa90ee9e7d6d
     vertices: []
     indices: 
     edges: []
